@@ -1,0 +1,6 @@
+onion:15
+tomato:5
+chese:16
+paneer:10
+bred:18
+chiken:10
