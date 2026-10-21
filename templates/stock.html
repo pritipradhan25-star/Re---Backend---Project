@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Stock</title>
+</head>
+<body>
+    <h1>Taj Restaurant</h1>
+    <h2>Available Ingredients</h2>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Ingredient</th>
+            <th>Quantity Available</th>
+        </tr>
+
+        {% for name, quantity in stock.items() %}
+        <tr>
+            <td>{{ name }}</td>
+            <td>{{ quantity }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <br>
+    <a href="/">Back to Order Page</a>
+</body>
+</html>
